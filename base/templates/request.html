@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST" id="request">
+            {{ form.hidden_tag() }}
+        <br>
+            {{ form.name.label() }}
+        <br>
+            {{ form.name(placeholder="Enter your name")}}
+        <br><br><br>
+            {{ form.description.label()}}
+        <br>
+            {{ form.description(placeholder="Enter your request")}}
+        <br>
+            {{ form.date.label() }}
+        <br>
+            {{ time.strftime('%x') }}
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

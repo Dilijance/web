@@ -1,0 +1,154 @@
+`<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lucky Shrub</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <nav>
+            <img src="./assets/logo.svg"/>
+            <div class="button">
+                <a href="{{ url_for('verification_page') }}">You are owner?</a>
+            <ul class="links">
+                <li><a class="navigation" href="#content">ABOUT US</a></li>
+                <li><a class="navigation" href="#services">SERVICES</a></li>
+                <li><a class="navigation" href="#testimonials">FEEDBACKS</a></li>
+            </ul>
+            <div class="button">
+                <a href="#contact-us">CONTACT US</a>
+            </div>
+        </nav>
+        <main id="content">
+            <section>
+                <h1 id="main">TRANSFORM ANY SPACE INTO AN <strong>OASIS</strong> WITH US</h1>
+                <p>CONTACT US TO GET FREE CONSULTATION AND DISCOUNT UP TO 25%</p>
+                <div class="button">
+                    <a href="https://youtu.be/kEBTkQtoins" target="_blank">START NOW</a>
+                </div>
+            </section>
+            <img width='750px' src="./assets/main-plant.svg"/>
+        </main>
+        <article id="services" class="hidden">
+            <h1>OUR CLIENTS RECIEVE <strong>ONLY</strong>:</h1>
+            <div class="container">
+                <div class="box">
+                    <img src="./assets/design-icon.svg"/>
+                    <h1 class="service-name">UNIQUE DESINGS</h1>
+                </div>
+                <div class="box">
+                    <img src="./assets/seed-icon.svg"/>
+                    <h1 class="service-name">HEALTHY PLANTS</h1>
+                </div>
+                <div class="box">
+                    <img src="./assets/seedpack-icon.svg"/>
+                    <h1 class="service-name">BEST CARING</h1>
+                </div>
+            </div>
+        </article>
+        <section id="phrase" class="hidden">
+            <img src="./assets/bg-leaf.svg"/>
+            <p>WE WILL HELP YOU TO IMPLEMENT YOUR DEEPEST DESIRES AND MAKE YOU PROUD OF YOUR GARDEN</p>
+        </section>
+        <article id="testimonials">
+            <div class="hidden small-top">
+                <div class="info">
+                    <img class='portrait' src="./photoes/small-top.png"/>
+                    <div class="details">
+                        <p class="name">Alex Mercer</p>
+                        <p class="proffesion">Designer</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <b>Fantastic!</b><br>
+                    "Amazing desings!"
+                </div>
+            </div>
+            <div class="hidden big-top">
+                <div class="info">
+                    <img class='portrait' src="./photoes/big-top.png"/>
+                    <div class="details">
+                        <p class="name">John Travolta</p>
+                        <p class="proffesion">Actor</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <b>Amazing plants</b><br>
+                    "I thought I don't like plants until 'Lucky Shrub' improved my apartment dramatically!"
+                </div>
+            </div>
+            <div class="hidden big-bottom">
+                <div class="info">
+                    <img class='portrait' src="./photoes/small-bottom.png"/>
+                    <div class="details">
+                        <p class="name">Jamie Lee Curtis</p>
+                        <p class="proffesion">Athlete</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <b>They made my home feel like a safe place</b><br>
+                    "I really admired the result! Highly recommended"
+                </div>
+            </div>
+            <div class="hidden small-bottom">
+                <div class="info">
+                    <img class='portrait' src="./photoes/long.png"/>
+                    <div class="details">
+                        <p class="name">Anonymous</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <b>good</b><br>
+                </div>
+            </div>
+            <div class="hidden long">
+                <div class="info">
+                    <img class='portrait' src="./photoes/big-bottom.png"/>
+                    <div class="details">
+                        <p class="name">Plantkween</p>
+                        <p class="proffesion">Plant Lover</p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <b>JUST WOW</b><br>
+                    "Best service ever!!! The company does make sure the result is pleasant for customer. Also, there was quite fast feedback on any of my requests.<br>I will defentely reuse their service!"
+                </div>
+            </div>
+        </article>
+            <h2>SEND A REQUEST NOW</h2>
+            <div class="button">
+                <a href="{{ url_for('request_page') }}">Make a request!</a>
+            </div>
+        <footer>
+            <div class="icons-holder">
+                <div class="icon">
+                    <img width="250px" src="./assets/logo.svg">
+                </div>
+                <div class="social-medias">
+                    <a target="_blank" href='https://www.instagram.com/' class="img-container"><img src="./assets/instagram.svg"/></a>
+                    <a target="_blank" href='https://www.tiktok.com/' class="img-container"><img src="./assets/tiktok.svg"/></a>
+                    <a target="_blank" href='https://www.facebook.com/' class="img-container"><img src="./assets/facebook.svg"/></a>
+                    <a target="_blank" href='https://www.twitter.com/' class="img-container"><img src="./assets/twitter.svg"/></a>
+                </div>
+            </div>
+            <div class="list">
+                <h3>PRODUCTS</h3>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Desings</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Plants</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Landscaping</a>
+            </div>
+            <div class="list">
+                <h3>SUPPORT</h3>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Online chat</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Call center</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Tracking</a>
+            </div>
+            <div class="list">
+                <h3>FAQ</h3>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Orders</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Payment</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=hWvM6de6mG8">Delivery</a>
+            </div>
+        </footer>
+    </body>
+</html>
